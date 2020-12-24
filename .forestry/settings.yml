@@ -22,7 +22,7 @@ sections:
 - type: directory
   path: content
   label: Pages
-  create: none
+  create: all
   match: "**/*"
   exclude: content/posts/**
   new_doc_ext: md
