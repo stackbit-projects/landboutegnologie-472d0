@@ -27,8 +27,3 @@ fields:
   default: page
   config:
     required: true
-pages:
-- content/about.md
-- content/contact-success.md
-- content/style-guide.md
-- content/subscribe-success.md
