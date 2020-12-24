@@ -7,7 +7,6 @@ sections:
 - type: document
   path: config.yaml
   label: Site Configuration
-  read_only: false
   templates:
   - config
 - type: document
@@ -25,10 +24,10 @@ sections:
   label: Pages
   create: none
   match: "**/*"
+  exclude: content/posts/**
   new_doc_ext: md
   templates:
   - page
-  - post
 - type: directory
   path: content/posts
   label: Posts
