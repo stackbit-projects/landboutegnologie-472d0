@@ -12,13 +12,9 @@ sections:
 - type: document
   path: content/_index.md
   label: Home
+  read_only: false
   templates:
   - home
-- type: document
-  path: content/contact.md
-  label: Contact
-  templates:
-  - contact
 - type: directory
   path: content
   label: Pages
