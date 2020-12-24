@@ -4,13 +4,6 @@ auto_deploy: false
 admin_path: static/admin
 webhook_url: https://api.stackbit.com/project/5fe472d01723140016bae7e3/webhook/forestry
 sections:
-- type: directory
-  path: content/posts
-  label: Posts
-  create: all
-  match: "*.md"
-  templates:
-  - post
 - type: document
   path: config.yaml
   label: Site Configuration
@@ -30,11 +23,18 @@ sections:
 - type: directory
   path: content
   label: Pages
-  create: all
+  create: none
   match: "**/*"
   new_doc_ext: md
   templates:
   - page
+  - post
+- type: directory
+  path: content/posts
+  label: Posts
+  create: all
+  match: "*.md"
+  templates:
   - post
 upload_dir: static/images
 public_path: "/images"
